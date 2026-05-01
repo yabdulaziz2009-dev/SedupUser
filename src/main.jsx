@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Home from '../src/Pages/Home.jsx'
+import Menu from './Pages/Menu.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,7 +15,11 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:<Home/>
+        element:<Menu/>
+      },
+      {
+        path:"/menu",
+        element:<Menu/>
       },
     ]
   },
