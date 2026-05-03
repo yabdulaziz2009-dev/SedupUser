@@ -1,28 +1,29 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import Home from '../src/Pages/Home.jsx'
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import './index.css'
-import App from './App.jsx'
+
+import App from "./App.jsx";
+import Home from "./Pages/Home.jsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<App/>,
-    children:[
+    element: <App />,
+    children: [
       {
-        path:"/",
-        element:<Home/>
+        index: true, // 🔥 "/" uchun default page
+        element: <Home />,
       },
-    ]
+    ],
   },
 ]);
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-     <RouterProvider router={router} />
-  </StrictMode>,
-)
+    <RouterProvider router={router} />
+  </StrictMode>
+);

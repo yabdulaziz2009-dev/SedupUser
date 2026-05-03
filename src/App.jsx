@@ -1,12 +1,13 @@
-import React from 'react'
-import MealOrder from './Pages/Mealorder'
+import React from "react";
+import { Outlet } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
-      <MealOrder/>
+      <h1>App Layout</h1>
+      <Outlet />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
