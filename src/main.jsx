@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import Menu from './Pages/Menu.jsx'
+import Menu from './Pages/Foodmenu.jsx'
 import ItemDetail  from "./Pages/ItemDetail.jsx"
 import { createRoot } from 'react-dom/client'
 import {
