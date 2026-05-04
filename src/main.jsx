@@ -11,6 +11,7 @@ import {
 import App from './App.jsx'
 import Home from './pages/Home.jsx'
 import './index.css'
+import Calendar from './Pages/Mealorder.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
       {
         path: "/item/:id",      
         element: <ItemDetail />   
+
+      },
+      {
+        path: "/calendar",      
+        element: <Calendar />   
 
       },
     ]
