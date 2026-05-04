@@ -8,6 +8,7 @@ import {
 import App from './App.jsx'
 import Home from './pages/Home.jsx'
 import './index.css'
+import Profil from './pages/Profil.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         index: true, // 🔥 yaxshiroq variant
         element: <Home />
+      },
+           {
+        index: "profil", 
+        element: <Profil />
       },
     ]
   },

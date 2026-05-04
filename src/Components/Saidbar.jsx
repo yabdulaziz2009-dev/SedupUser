@@ -9,7 +9,7 @@ const menuItems = [
   { name: 'Home',     icon: FiHome,          path: '/' },
   { name: 'Browse',   icon: FiSearch,        path: '/browse' },
   { name: 'Orders',   icon: FiShoppingBag,   path: '/orders' },
-  { name: 'Profile',  icon: FiUser,          path: '/profile' },
+  { name: 'Profil',  icon: FiUser,          path: '/profil' },
   { name: 'Calendar', icon: FiCalendar,      path: '/calendar' },
   { name: 'Chat',     icon: FiMessageSquare, path: '/xchat' },
 ];
@@ -20,7 +20,7 @@ const Sidebar = () => {
       style={{ fontFamily: "'DM Sans', sans-serif" }}
       className="w-[260px] bg-white h-screen sticky top-0 hidden md:flex flex-col border-r border-gray-100 shadow-sm"
     >
-      {/* Logo */}
+      
       <div className="px-6 pt-8 pb-6">
         <h1 className="text-[27px] font-bold tracking-[-0.5px]" style={{ color: '#E05A1F' }}>
           FreshDash
@@ -28,7 +28,7 @@ const Sidebar = () => {
         <p className="text-sm text-gray-400 mt-1">Effortless Vitality</p>
       </div>
 
-      {/* Navigation */}
+      
       <nav className="flex-1 px-3 space-y-1">
         {menuItems.map((item) => (
           <NavLink
