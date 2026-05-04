@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Home from '../src/Pages/Home.jsx'
+import Home from './Pages/Home.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -11,10 +11,11 @@ import App from './App.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<App/>,
+    element:<Home/>,
     children:[
       {
         path:"/",
+        index: true, // "/" yo'li uchun asosiy (default) child sifatida belgilaydi
         element:<Home/>
       },
     ]
